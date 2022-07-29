@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<AssetDeclaration>
+    <GameMap>
+        <MapMetaData
+                BorderSize="80"
+                CRC="0"
+                Description="Map:2012-8-3/Desc"
+                DisplayName="2012-8-3"
+                FileName="data\maps\2012-8-3\2012-8-3.map"
+                Height="760"
+                IsMultiplayer="false"
+                IsOfficial="false"
+                NumPlayers="3"
+                Width="760">
+            <StartPosition
+                    Name="InitialCameraPosition">
+                <Position
+                        x="0"
+                        y="0"
+                        z="0"/>
+            </StartPosition>
+            <StartPosition
+                    Name="Player_1_Start">
+                <Position
+                        x="5980.000006"
+                        y="620"
+                        z="0"/>
+            </StartPosition>
+            <StartPosition
+                    Name="Player_2_Start">
+                <Position
+                        x="5980.000006"
+                        y="130"
+                        z="0"/>
+            </StartPosition>
+            <StartPosition
+                    Name="Player_3_Start">
+                <Position
+                        x="3000"
+                        y="3570.000002"
+                        z="0"/>
+            </StartPosition>
+        </MapMetaData>
+    </GameMap>
+</AssetDeclaration>

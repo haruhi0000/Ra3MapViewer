@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+
+<Pane minWidth="800.0" prefHeight="523.0" prefWidth="806.0" styleClass="main-pane" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.haruhi.ra3mapviewer.controller.MainController">
+    <padding>
+        <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+    </padding>
+   <TabPane prefHeight="523.0" prefWidth="806.0" tabClosingPolicy="UNAVAILABLE">
+     <tabs>
+       <Tab text="本地地图">
+         <content>
+           <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="473.0" prefWidth="806.0">
+                  <children>
+                        <ListView fx:id="listView1" fixedCellSize="0.0" focusTraversable="false" onMouseClicked="#onListViewClick" prefHeight="400.0" prefWidth="327.0">
+                            <contextMenu>
+                                <ContextMenu fx:id="menu1">
+                                    <items>
+                                        <MenuItem fx:id="menuItem1" mnemonicParsing="false" onAction="#onMenuItemClick" text="打开" />
+                                        <MenuItem fx:id="menuItem2" mnemonicParsing="false" onAction="#onMenuItem2Click" text="删除" />
+                                    </items>
+                                </ContextMenu>
+                            </contextMenu>
+                        </ListView>
+                      <Pane fx:id="bigImageOutLLayerPane" layoutX="355.0" layoutY="0.0" prefHeight="340.0" prefWidth="340.0" styleClass="big-image-pane">
+                        <children>
+                           <Pane fx:id="pane1">
+                              <children>
+                                    <ImageView fx:id="bigImageView" pickOnBounds="true" preserveRatio="true" />
+                              </children>
+                           </Pane>
+                        </children>
+                      </Pane>
+                     <Button layoutX="14.0" layoutY="421.0" mnemonicParsing="false" onMouseClicked="#onMapDirectoryButtonClick" text="地图路径" />
+                     <Label fx:id="mapDirectoryLabel" layoutX="93.0" layoutY="425.0" prefHeight="17.0" prefWidth="689.0" style="-fx-background-color: #ffffff;" text="------" />
+                  </children>
+               </AnchorPane>
+         </content>
+       </Tab>
+     </tabs>
+   </TabPane>
+</Pane>

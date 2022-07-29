@@ -1,0 +1,37 @@
+.map-name-text {
+    -fx-text-fill: #EA7701;
+    -fx-font-size: 15px
+}
+.list-view {
+    -fx-background-color: #BC0D00;
+    -fx-border-style: solid;
+    -fx-border-width: 5px;
+    -fx-border-color: #000000;
+}
+.checkbox {
+
+}
+.main-pane {
+    -fx-background-image: url("R.jpg");
+    -fx-background-size:cover;
+}
+.scroll-bar {
+   -fx-pref-width: 16px;
+}
+.scroll-bar .track {
+    -fx-background-color: #000000;
+    -fx-border-style: solid;
+    -fx-border-width: 2px;
+    -fx-border-color: #BC0D00;
+}
+
+.scroll-bar .thumb {
+    -fx-background-color: #BC0D00;
+}
+
+.big-image-pane {
+    -fx-border-style: solid;
+    -fx-border-width: 5px;
+    -fx-border-color: #BC0D00;
+    -fx-background-color: #000000;
+}
